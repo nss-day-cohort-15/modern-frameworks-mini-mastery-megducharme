@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlowerShop</title>
+  <link rel="stylesheet" type="text/css" href="">
+</head>
+<body ng-app="FlowerShop">
+    <h1>Welcome to The Flower Shop!</h1>
+    <h3><i>The most original shop you've ever visited on the internet.</i></h3>
+  <div ng-view>
+
+  </div>
+  <!-- 3rd party libs -->
+  <script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="lib/bower_components/firebase/firebase.js"></script>
+  <!-- app specific -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/values/fb-creds.js"></script>
+<!-- controller -->
+<script type="text/javascript" src="app/FlowerCtrl.js"></script>
+<!-- factory -->
+<script type="text/javascript" src="app/FlowerFactory.js"></script>
+</body>
+</html>
