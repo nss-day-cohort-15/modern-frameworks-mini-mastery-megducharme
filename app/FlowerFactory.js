@@ -7,11 +7,14 @@ app.factory("FlowerFactory", ($q, $http) => {
     return $q( (resolve, reject) => {
       $http.get("https://flower-power-angular.firebaseio.com/arrangements.json")
       .success((flowerArrangements) => {
-      resolve(arrangements);
+      resolve(flowerArrangements);
     })
       .error( (error) => {
         reject(error);
       });
   });
 }
+
+return {getArrangements};
+
 });

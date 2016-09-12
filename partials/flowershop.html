@@ -1,7 +1,9 @@
 
-  <div class="row">
-    <ul>
-      <button ng-click="getArrangements()">View Arrangements</button>
-      <li ng-repeat = "arrangement in arrangements">{{arrangement.name}}</li>
-    </ul>
+  <div class="row flowerdiv">
+    <div class="arrangementDivs" ng-repeat = "flower in flowers">
+      <h3>{{flower.title}}</h3>
+      <h4>{{flower.category}}<h4>
+      <h5>${{flower.price}}</h5>
+      <h5>{{flower.description}}</h5>
+    </div>
   </div>
