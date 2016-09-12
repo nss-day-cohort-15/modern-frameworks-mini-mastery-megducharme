@@ -1,13 +1,17 @@
 "use strict";
 
-app.factory("FlowerFactory", ($q, $http, FirebaseURL) => {
+app.factory("FlowerFactory", ($q, $http) => {
 
   let getArrangements = () => {
-    let arrangements = [];
+    console.log("inside the getArrangements function");
     return $q( (resolve, reject) => {
-      $http.get(`${FirebaseURL}arrangements.json`)
+      $http.get("https://flower-power-angular.firebaseio.com/arrangements.json")
       .success((flowerArrangements) => {
       resolve(arrangements);
-    });
-  };
-};
+    })
+      .error( (error) => {
+        reject(error);
+      });
+  });
+}
+});

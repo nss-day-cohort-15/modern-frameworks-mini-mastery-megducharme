@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller("FlowerCtrl", function( $scope, FlowerFactory, $location) {
+app.controller("FlowerCtrl", function( $scope, FlowerFactory) {
 
   $scope.flowers = [];
   FlowerFactory.getArrangements()
