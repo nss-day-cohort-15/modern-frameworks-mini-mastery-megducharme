@@ -1,0 +1,28 @@
+.arrangementDivs {
+  display: inline-block;
+  height: 250px;
+  width: 300px;
+  margin: 0 10px 10px;
+  text-align: center;
+  background-color: lightyellow;
+  overflow: scroll;
+  padding: 0 10px 0 10px;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+body {
+  background-color: lightpink;
+}
+
+.flowerdiv {
+  margin-left: 30px;
+}
+
+h2 {
+  color: navy;
+  text-align: center;
+  font-family:
+}
