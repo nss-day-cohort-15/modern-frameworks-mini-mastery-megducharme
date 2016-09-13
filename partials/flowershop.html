@@ -1,6 +1,23 @@
 
-  <div class="row flowerdiv">
-    <div class="arrangementDivs" ng-repeat = "flower in flowers">
+  <div class="flowerdivs">
+    <h2>Holiday Arrangements</h2>
+    <div class="arrangementDivs" ng-repeat = "flower in flowers" ng-if="flower.category === 'holiday'">
+      <h3>{{flower.title}}</h3>
+      <h4>{{flower.category}}<h4>
+      <h5>${{flower.price}}</h5>
+      <h5>{{flower.description}}</h5>
+    </div>
+
+    <h2>Bereavement Arrangements</h2>
+    <div class="arrangementDivs" ng-repeat = "flower in flowers" ng-if="flower.category === 'bereavement'">
+      <h3>{{flower.title}}</h3>
+      <h4>{{flower.category}}<h4>
+      <h5>${{flower.price}}</h5>
+      <h5>{{flower.description}}</h5>
+    </div>
+
+    <h2>Misc Arragements</h2>
+    <div class="arrangementDivs" ng-repeat = "flower in flowers" ng-if="flower.category === 'misc'">
       <h3>{{flower.title}}</h3>
       <h4>{{flower.category}}<h4>
       <h5>${{flower.price}}</h5>
